@@ -33,74 +33,158 @@ var Layout = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
 
     _this.clickedBtn = function () {
-      console.log('swag');
+      console.log("swag");
     };
 
     _this.state = {
-      name: 'Joe'
+      name: "Joe"
     };
     return _this;
   }
 
   _createClass(Layout, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
-        { className: 'home' },
+        "div",
+        { className: "app" },
         _react2.default.createElement(
-          'div',
-          { className: 'Aligner' },
+          "section",
+          { className: "container" },
           _react2.default.createElement(
-            'div',
-            { className: 'Aligner-item' },
-            _react2.default.createElement('img', { src: '/img/logo.png' }),
+            "header",
+            { id: "header" },
             _react2.default.createElement(
-              'h1',
-              null,
-              'Starter-Kit-2k18'
+              "div",
+              { className: "logo" },
+              "Bape"
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'menu' },
+              "div",
+              { className: "menu" },
               _react2.default.createElement(
-                'ul',
+                "nav",
                 null,
                 _react2.default.createElement(
-                  'div',
-                  { onClick: this.clickedBtn },
-                  'clickked this'
+                  "a",
+                  { href: "lookbook.html" },
+                  "Home "
                 ),
                 _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'http://starterkit.codingphase.com', target: 'new' },
-                    'Documentation'
-                  )
+                  "a",
+                  { href: "lookbook.html" },
+                  "Lookbook"
                 ),
                 _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'http://www.codingphase.com', target: 'new' },
-                    'CodingPhase.Com'
-                  )
+                  "a",
+                  { href: "lookbook.html" },
+                  "Menue"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "lookbook.html" },
+                  "Woman"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "lookbook.html" },
+                  "News"
                 )
               )
-            ),
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "section",
+          { id: "content-area" },
+          _react2.default.createElement(
+            "div",
+            { className: "col-md-6 model" },
+            _react2.default.createElement("img", { src: "/img/bape2.png", alt: "" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "col-md-6 info" },
             _react2.default.createElement(
-              'div',
-              { className: 'version-num' },
-              'version 2.0.18'
-            ),
-            _react2.default.createElement('br', null),
-            _react2.default.createElement(
-              'a',
-              { className: 'github-button', href: 'https://github.com/codingphasedotcom/Starter-Kit-2018', 'data-icon': 'octicon-star', 'data-style': 'mega', 'data-count-href': '/codingphasedotcom/rocky/stargazers', 'data-count-api': '/repos/codingphasedotcom/rocky#stargazers_count', 'data-count-aria-label': '# stargazers on GitHub', 'aria-label': 'Star codingphasedotcom/rocky on GitHub' },
-              'Star'
+              "div",
+              { className: "insider" },
+              _react2.default.createElement(
+                "h5",
+                null,
+                "Mens"
+              ),
+              _react2.default.createElement(
+                "h1",
+                null,
+                "JAKET DRIPPING SOUSE"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "Mustache church-key man braid meh YOLO blue bottle pitchfork pabst normcore cred vice lumbersexual etsy fashion axe. Raclette intelligentsia microdosing, gochujang cred hot chicken flannel pabst. Austin air plant humblebrag retro kinfolk hammock. Tofu listicle copper mug, cronut kickstarter lomo poke drinking vinegar chillwave. Distillery cardigan lomo, la croix tote bag asymmetrical lo-fi tousled."
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "size" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "title" },
+                  "size"
+                ),
+                _react2.default.createElement(
+                  "ul",
+                  { className: "sizes" },
+                  _react2.default.createElement(
+                    "li",
+                    { className: "circle" },
+                    "S"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { className: "circle" },
+                    "M"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { className: "circle" },
+                    "L"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { className: "semi-circle" },
+                    "XL"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { className: "semi-circle" },
+                    "XXL"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { className: "semi-circle" },
+                    "CUSTOM"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "action-btn" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "col-md-6 red-hollow-btn" },
+                  _react2.default.createElement(
+                    "span",
+                    { className: " price" },
+                    "$495"
+                  ),
+                  "add to cart"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: " col-md-6 lightgrey-btn" },
+                  "find a store"
+                )
+              )
             )
           )
         )
@@ -111,7 +195,7 @@ var Layout = function (_Component) {
   return Layout;
 }(_react.Component);
 
-var app = document.getElementById('app');
+var app = document.getElementById("app");
 
 _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 

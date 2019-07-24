@@ -1,40 +1,78 @@
-import React, { Component} from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
 class Layout extends Component {
-  constructor () {
-    super()
+  constructor() {
+    super();
     this.state = {
-      name: 'Joe'
-    }
+      name: "Joe"
+    };
   }
   clickedBtn = () => {
-    console.log('swag')
-  }
-  render () {
-    return (<div className='home'>
-        <div className='Aligner'>
-          <div className='Aligner-item'>
-            <img src='/img/logo.png' />
-            <h1>Starter-Kit-2k18</h1>
-            <div className='menu'>
-              <ul>
-                <div onClick={this.clickedBtn}>clickked this</div>
-                <li><a href='http://starterkit.codingphase.com' target='new'>Documentation</a></li>
-                <li><a href='http://www.codingphase.com' target='new'>CodingPhase.Com</a></li>
-              </ul>
+    console.log("swag");
+  };
+  render() {
+    return (
+      <div className="app">
+        <section className="container">
+          <header id="header">
+            <div className="logo">Bape</div>
+            <div className="menu">
+              <nav>
+                <a href="lookbook.html">Home </a>
+                <a href="lookbook.html">Lookbook</a>
+                <a href="lookbook.html">Menue</a>
+                <a href="lookbook.html">Woman</a>
+                <a href="lookbook.html">News</a>
+              </nav>
             </div>
-            <div className='version-num'>
-              version 2.0.18
-            </div>
-            <br />
-            <a className='github-button' href='https://github.com/codingphasedotcom/Starter-Kit-2018' data-icon='octicon-star' data-style='mega' data-count-href='/codingphasedotcom/rocky/stargazers' data-count-api='/repos/codingphasedotcom/rocky#stargazers_count' data-count-aria-label='# stargazers on GitHub' aria-label='Star codingphasedotcom/rocky on GitHub'>Star</a>
+          </header>
+        </section>
+        <section id="content-area">
+          <div className="col-md-6 model">
+            <img src="/img/bape2.png" alt="" />
           </div>
-        </div>
-      </div>)
+          <div className="col-md-6 info">
+            <div className="insider">
+              <h5>Mens</h5>
+              <h1>JAKET DRIPPING SOUSE</h1>
+              <p>
+                Mustache church-key man braid meh YOLO blue bottle pitchfork
+                pabst normcore cred vice lumbersexual etsy fashion axe. Raclette
+                intelligentsia microdosing, gochujang cred hot chicken flannel
+                pabst. Austin air plant humblebrag retro kinfolk hammock. Tofu
+                listicle copper mug, cronut kickstarter lomo poke drinking
+                vinegar chillwave. Distillery cardigan lomo, la croix tote bag
+                asymmetrical lo-fi tousled.
+              </p>
+              <div className="size">
+                <div className="title">size</div>
+                <ul className="sizes">
+                  <li className="circle">S</li>
+                  <li className="circle">M</li>
+                  <li className="circle">L</li>
+                  <li className="semi-circle">XL</li>
+                  <li className="semi-circle">XXL</li>
+                  <li className="semi-circle">CUSTOM</li>
+                </ul>
+              </div>
+              <div className="action-btn">
+                <a href="#" className="col-md-6 red-hollow-btn">
+                  <span className=" price">$495</span>
+                  add to cart
+                </a>
+                <a href="#" className=" col-md-6 lightgrey-btn">
+                  find a store
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
   }
 }
 
-const app = document.getElementById('app')
+const app = document.getElementById("app");
 
-ReactDOM.render(<Layout />, app)
+ReactDOM.render(<Layout />, app);
